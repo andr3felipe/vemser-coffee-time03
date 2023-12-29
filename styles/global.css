@@ -1,0 +1,14 @@
+:root {
+  --primary: rgba(180, 113, 80, 1);
+  --text: rgba(30, 26, 29, 1);
+  --white: rgba(251, 251, 251, 1);
+  --gray-100: rgba(232, 229, 228, 1);
+  --gray-200: rgba(217, 217, 217, 1);
+  --gray-300: rgba(198, 198, 198, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
