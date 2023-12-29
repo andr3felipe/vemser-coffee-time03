@@ -1,6 +1,6 @@
 :root {
   --primary: rgba(180, 113, 80, 1);
-  --text: rgba(30, 26, 29, 1);
+  --text: rgba(0, 0, 0, 1);
   --white: rgba(251, 251, 251, 1);
   --gray-100: rgba(232, 229, 228, 1);
   --gray-200: rgba(217, 217, 217, 1);
@@ -11,4 +11,48 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 36px 83px 0 86px;
+  max-width: 1440px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logotipo,
+.nav-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  > i {
+    font-size: 5rem;
+  }
+}
+
+.nav-logotipo {
+  gap: 1rem;
+
+  > span {
+    font-size: 2.1rem;
+    font-weight: 700;
+  }
+}
+
+.ph-shopping-cart {
+  color: var(--primary);
 }
