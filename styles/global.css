@@ -1,5 +1,6 @@
 :root {
   --primary: rgba(180, 113, 80, 1);
+  --hover: rgb(123 93 67);
   --text: rgba(0, 0, 0, 1);
   --white: rgba(251, 251, 251, 1);
   --gray-100: rgba(232, 229, 228, 1);
@@ -10,6 +11,9 @@
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
+
+  --scale: 1.03;
+  --transition: all 0.2s ease-in-out;
 }
 
 * {
@@ -54,6 +58,7 @@ body {
 
 .nav-logotipo {
   gap: 1rem;
+  transition: var(--transition);
 
   > span {
     font-size: 2.1rem;
@@ -61,8 +66,18 @@ body {
   }
 }
 
+.nav-logotipo:hover {
+  transform: scale(var(--scale));
+}
+
 .ph-shopping-cart {
   color: var(--primary);
+  transition: var(--transition);
+}
+
+.ph-shopping-cart:hover {
+  color: var(--hover);
+  transform: scale(var(--scale));
 }
 
 .footer {
@@ -78,10 +93,17 @@ body {
 
   a {
     text-decoration: none;
+    transition: var(--transition);
   }
 
   i {
     font-size: 3.2rem;
     color: var(--white);
+    transition: var(--transition);
+  }
+
+  i:hover {
+    color: var(--text);
+    font-size: 3.6rem;
   }
 }

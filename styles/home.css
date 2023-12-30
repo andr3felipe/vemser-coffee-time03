@@ -44,6 +44,11 @@
     color: var(--white);
     background-color: var(--primary);
   }
+
+  a:hover {
+    background-color: var(--hover);
+    transform: scale(var(--scale));
+  }
 }
 
 .products-section {
@@ -126,9 +131,11 @@
 
 .product-button {
   background-color: var(--primary);
+  transition: var(--transition);
   padding: var(--padding-sm) 6px;
   color: var(--white);
   border: none;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
@@ -141,6 +148,11 @@
 
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.product-button:hover {
+  background-color: var(--hover);
+  transform: scale(var(--scale));
 }
 
 .material-symbols-outlined {
