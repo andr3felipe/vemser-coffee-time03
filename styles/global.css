@@ -1,14 +1,109 @@
 :root {
   --primary: rgba(180, 113, 80, 1);
-  --text: rgba(30, 26, 29, 1);
+  --hover: rgb(123 93 67);
+  --text: rgba(0, 0, 0, 1);
   --white: rgba(251, 251, 251, 1);
   --gray-100: rgba(232, 229, 228, 1);
   --gray-200: rgba(217, 217, 217, 1);
   --gray-300: rgba(198, 198, 198, 1);
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --scale: 1.03;
+  --transition: all 0.2s ease-in-out;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--gray);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 2rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-top: 3.6rem;
+}
+
+.nav-logotipo,
+.nav-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  > i {
+    font-size: 5rem;
+  }
+}
+
+.nav-logotipo {
+  gap: 1rem;
+  transition: var(--transition);
+
+  > span {
+    font-size: 2.1rem;
+    font-weight: 700;
+  }
+}
+
+.nav-logotipo:hover {
+  transform: scale(var(--scale));
+}
+
+.ph-shopping-cart {
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.ph-shopping-cart:hover {
+  color: var(--hover);
+  transform: scale(var(--scale));
+}
+
+.footer {
+  background-color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1.2rem;
+
+  min-height: 10rem;
+
+  a {
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  i {
+    font-size: 3.2rem;
+    color: var(--white);
+    transition: var(--transition);
+  }
+
+  i:hover {
+    color: var(--text);
+    font-size: 3.6rem;
+  }
 }
