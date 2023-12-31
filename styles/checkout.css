@@ -146,6 +146,7 @@ font-weight: 600;
   margin-top: 2.6rem;
   border-radius: var(--radius-xs);
   cursor: pointer;
+  font-weight: 700;
 }
 .agree-order:hover{
 background-color: var(--hover);
