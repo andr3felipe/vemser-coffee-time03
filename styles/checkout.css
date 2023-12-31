@@ -8,7 +8,7 @@ h2{
   margin-left: 1rem;
 }
 h3{
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 1.2rem;
 }
 p{
@@ -24,9 +24,12 @@ p{
   margin: 3.6rem 1rem;
 }
 
-.container-cards > div {
-  width: 605px;
-  min-width: 320px;
+.container-cards > form {
+  /* width: 605px;
+  min-width: 320px; */
+  max-width:60.5rem;
+  width: 100%;
+
 }
 
 .card-custumer-data > div{
@@ -52,6 +55,9 @@ p{
   padding: 2.2rem;
  width: 100%;
 }
+input::placeholder {
+  color: var(--text);
+}
 
 .container-input input:first-child{
   margin-top: 3rem;
@@ -73,18 +79,21 @@ p{
   flex-wrap: wrap;
   gap: 1.7rem;
 }
-.control-order-items p, span, i{
+.control-order-items p, span{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.control-order-items i{
   font-size: 2rem;
-  /* padding: .8rem 0; */
 }
 .control-order-items p{
-  padding: 0 .7rem;
+   padding: 0 .7rem; 
 }
 .subtract-item, .add-more-item{
-  padding: 0 1.5rem;
+   padding: 0 .8rem; 
 }
 .sum-items{
- margin: 0 1rem;
+margin: 0 1rem; 
 }
 .control-order-items div:first-child{
   display: flex;
@@ -134,7 +143,7 @@ font-weight: 600;
   color: var(--white);
   border: none;
   padding: 1rem 0;
-  margin-top: 4rem;
+  margin-top: 2.6rem;
   border-radius: var(--radius-xs);
   cursor: pointer;
 }
