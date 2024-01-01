@@ -24,9 +24,7 @@ p{
   margin: 3.6rem 1rem;
 }
 
-.container-cards > form {
-  /* width: 605px;
-  min-width: 320px; */
+.container-cards > div {
   max-width:60.5rem;
   width: 100%;
 

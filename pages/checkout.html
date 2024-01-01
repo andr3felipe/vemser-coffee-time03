@@ -31,20 +31,20 @@
   <main>
     <h2>Checkout</h2>
 
-    <div class="container-cards">
+    <form class="container-cards" action="../pages/success.html" method="GET">
 
-      <form class="card-custumer-data">
+      <div class="card-custumer-data">
         <div>
           <h3>Complete seu pedido!</h3>
           <p>Insira seus dados para receber seu cafezinho.</p>
           <div class="container-input">
-            <input type="text" id="nome" name="nome" placeholder="Nome" pattern="[A-Za-zÀ-ú\s']+" aria-label="Insira seu nome completo">
+            <input type="text" id="nome" name="nome" placeholder="Nome" pattern="[A-Za-zÀ-ú\s']+" aria-label="Insira seu nome completo" required>
             <input type="text" id="cpf" name="cpf" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required aria-label="Insira seu CPF">
           </div>
         </div>
 
-      </form>
-      <form class="card-order" action="../pages/success.html" method="GET">
+      </div>
+      <div class="card-order">
         <h3>Você selecionou</h3>
         <p>Confira se está tudo certo no seu pedido</p>
 
@@ -106,8 +106,8 @@
         </div>
 
         <button type="submit" class="agree-order" aria-label="Confirmar pedido com todos os items do carrinho de compras">Confirmar pedido!</button>
-      </form>
-
+      </div>
+    </form>
   </main>
 
   <footer class="footer">
