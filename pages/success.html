@@ -4,15 +4,88 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Prove apenas do melhor café de todos! Feito para qualquer momento"
+      content="Pedido confirmado, aqui você encontra os melhores cafés do Brasil."
     />
     <meta
       name="keywords"
-      content="Café Expresso, Café Tradicional, Expresso Americano, Expresso Cremoso"
+      content="pedido confirmado, sua compra, vemser coffee, cafés especiais"
     />
     <meta name="author" content="André Felipe & Thales Salla" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/success.css" />
+    <title>Pedido confirmado</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navigation">
+          <a href="../index.html" class="nav-logotipo">
+            <i class="ph-fill ph-coffee"></i>
+            <span>Vemser Coffee</span>
+          </a>
+          <a
+            href="../pages/checkout.html"
+            aria-label="Página de checkout"
+            class="nav-cart"
+          >
+            <i class="ph-fill ph-shopping-cart"></i
+          ></a>
+        </nav>
+      </header>
+      <main>
+        <div class="heading-container">
+          <h1 class="title">Pedido confirmado.</h1>
+        </div>
+        <div class="thank-you-container">
+          <i class="ph-bold ph-check-fat"></i>
+          <p class="description">Obrigado pela confiança!</p>
+        </div>
+        <div class="client-container">
+          <div class="client-data-container">
+            <div>
+              <i class="ph ph-smiley"></i>
+              <h2>Nome:</h2>
+              <p class="description">Carlos Eduardo da Silva</p>
+            </div>
+          </div>
+
+          <div class="client-data-container">
+            <div>
+              <i class="ph ph-identification-card"></i>
+              <h2>CPF:</h2>
+              <p class="description">123.456.789-12</p>
+            </div>
+          </div>
+
+          <div class="client-data-container">
+            <div>
+              <i class="ph ph-timer"></i>
+              <h2>Tempo de espera aproximado:</h2>
+              <p class="description">2 minutos.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <a href="#" target="_blank" aria-label="Vemser Coffee facebook"
+        ><i class="ph ph-facebook-logo"></i
+      ></a>
+      <a href="#" target="_blank" aria-label="Vemser Coffee instagram"
+        ><i class="ph ph-instagram-logo"></i
+      ></a>
+      <a href="#" target="_blank" aria-label="Vemser Coffee tiktok"
+        ><i class="ph ph-tiktok-logo"></i
+      ></a>
+    </footer>
+  </body>
 </html>
